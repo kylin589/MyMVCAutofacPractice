@@ -1,0 +1,30 @@
+﻿@model List<MyMVCAutofac.Core.Model.Supplier>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyPage</title>
+</head>
+<body>
+    <div>
+        @foreach (var suplier in Model)
+        {
+            <div>User</div>
+            <div>Name:@suplier.Name</div>
+            <address>@suplier.Description</address>
+
+            @*foreach (var user in suplier.Users)
+            {
+                <div>Suplier</div>
+                <div>Name:@suplier.Name</div>
+                <address>@suplier.Description</address>
+            }*@
+        }
+    </div>
+</body>
+</html>
